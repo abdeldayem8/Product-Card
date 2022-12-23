@@ -1,0 +1,78 @@
+body{
+    background: hsl(30, 38%, 92%);
+}
+@media (max-width:767px){
+    body{
+        padding: 30px;
+    }
+}
+.card{
+    margin: 200px auto;
+    display: grid;
+    grid-template-columns:  repeat(auto-fill,minmax(265px,1fr));
+    background-color: white;
+    box-shadow: rgb(100 100 111 / 20%) 0px 7px 29px 0px;
+    width: fit-content;
+    border-radius: 6px;
+}
+  .desk{
+   max-width: 100%;
+   border-radius: 6px;
+}
+@media (max-width:767px){
+     .desk{ 
+        display: none;
+    }
+}
+ .mobile{ 
+    max-width: 100%;
+    border-radius: 6px;
+}
+@media (min-width:768px){
+   .mobile{ 
+    display: none;
+    }
+}
+.content{
+    padding: 30px;
+}
+.content h2{
+    letter-spacing: 5px;
+}
+.prices{
+    margin-bottom: 10px;
+}
+.new{
+    font-size: 23px;
+    color:hsl(158deg, 36%, 37%) ;
+}
+.old{
+    color: #666;
+    text-decoration: line-through;
+    margin-left: 10px;
+}
+.content p{
+    color: #666;
+    width: 200px;
+}
+button{
+    background-color: hsl(158deg, 36%, 37%);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    padding: 10px;
+    width: 100%;
+    transition: 0.3s;
+}
+button:hover{
+    background-color: rgba(60, 128, 103, 0.853);
+}
+button > img{
+    margin-right: 5px;
+}
+footer{
+    text-align: center;
+}
+footer a{
+    text-decoration: none;
+}
